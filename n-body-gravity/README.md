@@ -34,6 +34,10 @@ x_new = x_old + v_new*dt
 
 ---
 
+## Limitations
+
+There is a slight limitation of this programme with the fact that it uses Euler integration which will unfortunately lead to energy drift over long simulations. This could be a future improvement consideration by implementing another method of integration such as leapfrog or RK4.
+
 ## Requirements
 
 - Python 3.x
