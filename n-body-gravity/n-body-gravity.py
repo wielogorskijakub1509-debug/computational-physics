@@ -94,5 +94,7 @@ def update(frame):
 
 # Create animation
 animation = anim.FuncAnimation(fig, update, frames=1000, interval=50, blit=True)
+plt.grid(True)
+plt.title("N-Body Gravitational Simulation")
 plt.show()
             
