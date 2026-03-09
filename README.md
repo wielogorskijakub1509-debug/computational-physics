@@ -31,17 +31,6 @@ Trajectories are visualized in real-time using matplotlib.
 cd n-body-gravity
 python n_body.py
 ```
-### Simple Harmonic Oscillator
-Simulates the motion of a particle oscillating in accordance with Hooke's law. Users define:
-
-- Mass of particle
-- Starting extension
-- Spring constant
-
-```bash
-cd simple-harmonic-oscillator
-python simpleoscillator.py
-```
 
 ### Simple Harmonic Oscillator
 Simulates the motion of a particle oscillating in accordance to F=-kx and ignoring friction/air resistance. Users define:
@@ -68,12 +57,8 @@ python random_walkers.py
 ```
 
 ### Future Projects
-<<<<<<< HEAD
 - Damped Harmonic Oscillator
-=======
->>>>>>> 3d36a39f72e5044d55b8d837afa1f0bcfe412110
 - Double Pendulum
-- Damped Oscillator
 - Any other ideas I might want to implement
 
 ---
