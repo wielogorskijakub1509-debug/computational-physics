@@ -71,7 +71,7 @@ time_elapsed = 0.0  # seconds, tracked across frames
 def update(frame):
     global time_elapsed
 
-    dt = 1e3 
+    dt = 1e4
     G = 6.67430e-11
     
     # Calculate forces and update particles

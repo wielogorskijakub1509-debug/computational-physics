@@ -25,15 +25,39 @@ Simulates the motion of multiple bodies interacting through Newtonian gravity in
 - Masses
 - Initial positions and velocities
 
-Trajectories are visualized in real-time using Matplotlib.
+Trajectories are visualized in real-time using matplotlib.
 
 ```bash
 cd n-body-gravity
 python n_body.py
 ```
 
+### Simple Harmonic Oscillator
+Simulates the motion of a particle oscillating in accordance to F=-kx and ignoring friction/air resistance. Users define:
+
+- Spring constant
+- Mass of particle
+- Initial extention
+
+Oscillation shown in real time using matplotlib.
+
+```bash
+cd simple-harmonic-oscillator
+python simpleoscillator.py
+```
+
+### Diffusion simulation
+Simulates diffusion with 10000 "walkers" moving a step in a random direction with each time step. Users shown a heatmap of particle positions and graph of diffusion constant against time with ideal diffusion constant (0.25) shown in red.
+
+This is all shown in real time using matplotlib
+
+```bash
+cd random-walkers
+python random_walkers.py
+```
+
 ### Future Projects
-- Simple Harmonic Oscillator
+- Damped Harmonic Oscillator
 - Double Pendulum
 - Any other ideas I might want to implement
 

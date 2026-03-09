@@ -8,7 +8,6 @@ class Particle:
         self.position = position
         self.velocity = velocity
         self.k = k
-        self.history = []
     
     def calculate_force(self):
         return -self.k * self.position
@@ -18,7 +17,7 @@ class Particle:
         acceleration = force/self.mass
         self.velocity += acceleration * dt
         self.position += self.velocity * dt
-        self.history.append(self.position)
+
 # get user input for parameters
 mass = float(input("Mass (Kg): "))
 k = float(input("Spring Constant (N/m): "))
@@ -30,7 +29,7 @@ particle = Particle(mass = mass, position = x, velocity = 0.0, k = k)
 if k <= 0:
     raise ValueError("Spring constant must be positive")
 period = 2 * np.pi * np.sqrt(mass / k)
-print(f"Computed small‑oscillation period: {period:.3f} s")
+print(f"Computed period: {period:.3f} s")
 
 # simulate for 5 cycles
 cycles = 5
@@ -62,7 +61,6 @@ def init():
 def update_frame(frame):
     particle.update(dt)
     pos = particle.position
-    # set_data requires sequences; wrap scalars in lists
     mass_point.set_data([pos], [0])
     spring_line.set_data([0, pos], [0, 0])
     return mass_point, spring_line
@@ -76,6 +74,7 @@ ani = anim.FuncAnimation(
     init_func=init,
     blit=True,
     interval=dt * 1000  # milliseconds per frame
+    repeat = False
 )
 
 plt.tight_layout()
