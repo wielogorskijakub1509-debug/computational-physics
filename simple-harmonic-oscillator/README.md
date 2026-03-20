@@ -74,8 +74,3 @@ Some ideas to experiment with:
 * Display a trace of the motion or plot energy vs time.
 * Save the animation to an MP4 or GIF file using `ani.save()`.
 * Animate a vertical spring with gravity included.
-
-## License
-
-This code is provided under the MIT license – feel free to adapt it for
-educational purposes.
